@@ -1,0 +1,311 @@
+/* 
+// App Stylesheet
+// --------------
+*/
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/less/bootstrap.less";
+
+// Give the navigation some padding
+.nav {
+	margin: 10px 0;
+	
+	// Style the active links
+	a.active {
+		font-weight: bold;
+	}
+}
+
+#navBar{
+	display: none;
+}
+
+.human{
+	background-color: #F2F2F2;
+	height: 400px;
+}
+.score{
+	background-color: #fff;
+	height: 400px;
+}
+.computer{
+	background-color: #F2F2F2;
+	height: 400px;
+}
+
+.human_title{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	 font: italic bold 30px  Arial;
+}
+
+.computer_title{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font: italic bold 30px  Arial;
+	padding-bottom: 150px;
+}
+
+.score_title{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	 font: italic bold 30px  Arial;
+}
+
+ul{
+	padding-left: 0px;
+	list-style-type: none;
+	height: 100px;
+}
+
+li{
+	display: inline-block;
+
+}
+
+button.Rock{
+	background-image: url("../images/rock.png");
+	background-size: 100px 100px;
+    background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00a6ff;
+	padding: 10px 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #00a6ff;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px 0px 0px rgba(000,139,214,0.4),
+		0px 1px 0px rgba(255,255,255,0);
+}
+
+.Rock_shape_chosen{
+	background-image: url("../images/rock.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+
+button.Paper{
+	background-image: url("../images/paper.png");
+	background-size: 100px 100px;
+    background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00a6ff;
+	padding: 10px 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #00a6ff;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px 0px 0px rgba(000,139,214,0.4),
+		0px 1px 0px rgba(255,255,255,0);
+}
+
+.Paper_shape_chosen{
+	background-image: url("../images/paper.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+
+button.Scissor{
+	background-image: url("../images/scissor.png");
+	background-size: 100px 100px;
+    background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00a6ff;
+	padding: 10px 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #00a6ff;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px 0px 0px rgba(000,139,214,0.4),
+		0px 1px 0px rgba(255,255,255,0);
+}
+
+.Scissor_shape_chosen{
+	background-image: url("../images/scissor.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+
+.btn {
+  width: 100%;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.restartButton{
+	bottom: 0px;
+	position: absolute;
+	padding-left: 0px;
+	padding-right: 30px;
+}
+
+.wins_number{
+	text-align: center;
+	height: 40px;
+	background-color: #81BEF7;
+	color: #fff;
+	font: italic bold 36px  Arial;
+}
+
+.wins_title{
+	background-color: #ccc;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font: italic bold 16px  Arial;
+}
+
+.ties_number{
+	text-align: center;
+	height: 40px;
+	background-color: #81BEF7;
+	color: #fff;
+	font: italic bold 36px  Arial;
+}
+
+.ties_title{
+	background-color: #ccc;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	font: italic bold 16px  Arial;
+}
+
+.shape_chosen{
+	background-color: #ddd;
+	width: 100%;
+	height: 200px;
+}
+
+.human_container{
+	height: 100%;
+}
+
+.round{
+	border-top: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	font: italic bold 16px  Arial;
+}
+
+.time{
+	height: 200px;
+	background-color: #fff;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 200px;
+	font-size: 130px;
+	color: #ADDFFF;
+}
+
+.result_paper_rock{
+	background-image: url("../images/paper_rock.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+.result_rock_scissor{
+	background-image: url("../images/rock_scissor.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+.result_scissor_paper{
+	background-image: url("../images/scissor_paper.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
+
+.result_tie{
+	background-image: url("../images/tie.png");
+	background-size: 200px 200px;
+    background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+    background-position:center center; 
+}
